@@ -22,7 +22,7 @@ get_header(); ?>
 				endwhile;
 			?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</div>
+	</div>
 
 <?php get_footer(); ?>

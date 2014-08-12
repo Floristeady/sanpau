@@ -1,5 +1,5 @@
 <nav id="breadcrumbs">
-	<div class="content-center">
+	<div class="row">
 		<p><a href="/"> <?php _e('Home', 'sanpau') ?></a> 
 		<span class="separator">></span> 
 		<?php if (is_page()) { ?>

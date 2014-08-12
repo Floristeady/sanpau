@@ -431,7 +431,10 @@
 			}
 
 			if (isset($options['site_js']) && $options['site_js']) {
-				add_action('wp_footer', 'add_site_script');
+				//add_action('wp_footer', 'add_site_script');
+				// check if should be loaded in <head> or at end of <body>
+				$hook = (isset($options['jquery_head']) && $options['jquery_head']) ? 'wp_print_styles' : 'wp_footer';
+				add_action($hook, 'add_site_script');
 			}
 			
 			if (isset($options['google_verification']) && $options['google_verification'] && $options['google_verification_account'] && $options['google_verification_account'] && $options['google_verification_domain']  && $options['google_verification_domain'] !== 'XXXXXXXXX...') {

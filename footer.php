@@ -9,7 +9,8 @@
  * @subpackage sanpau
  * @since sanpau 1.0
  */
-?>
+?>			
+				
 			</div><!-- #main-inner -->
 		</div><!-- #main -->
 	
@@ -19,8 +20,11 @@
 		<div id="footer-content" class="row">	
 		<?php get_sidebar( 'footer' ); ?>
 		</div>
-	</footer>
+	</footer> 
 
 	<?php wp_footer(); ?>
+	<script type="text/javascript"> 
+    	$(document).foundation();
+	</script>
 	</body>
 </html>

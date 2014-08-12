@@ -16,8 +16,9 @@ get_header(); ?>
 
 <?php include('inc/breadcrumbs.php'); ?>
 
-<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<section id="primary" class="content-area row">
+
+		<div id="content" class="site-content columns medium-7" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -43,9 +44,8 @@ get_header(); ?>
 				endif;
 			?>
 		</div><!-- #content -->
-	</section><!-- #primary -->
+		
+		<?php get_sidebar(); ?>
+	</section>
 
-<?php 
-get_sidebar();
-get_footer(); 
-?>
+<?php  get_footer(); ?>

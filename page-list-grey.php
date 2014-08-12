@@ -59,10 +59,7 @@ get_header(); ?>
 								<?php if($rows) { ?>
 									<ul id="list-simple" class="row">
 									<?php foreach($rows as $row) { ?>
-										<li>
-											<?php echo $row['texto_listado_simple'] ?>
-											<span></span>
-										</li>
+										<li><?php echo $row['texto_listado_simple'] ?><span></span></li>
 									<?php } ?>
 									</ul>
 								

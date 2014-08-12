@@ -8,7 +8,7 @@
  */
 ?>
 
-<div id="sidebar">
+<div id="sidebar" class="colums medium-3">
 			
 	<?php
 
@@ -16,21 +16,6 @@
 		<div class="widget-list">
 			<?php dynamic_sidebar( 'primary-widget-area' ); ?>
 		</div>
-		<?php endif; ?>
-	
-		<?php
-		if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-	
-		<div class="widget-list">
-			<?php dynamic_sidebar( 'secondary-widget-area' ); ?>
-		</div>
-		<?php endif; ?>
-	
-		<?php
-		if ( is_active_sidebar( 'products-widget-area' ) ) : ?>
-			<div class="widget-list">
-				<?php dynamic_sidebar( 'products-widget-area' ); ?>
-			</div>
 		<?php endif; ?>
 
 </div>

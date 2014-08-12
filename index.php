@@ -10,12 +10,10 @@
 get_header(); ?>
 
 <div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area row">
 	
-	<?php include('inc/breadcrumbs.php'); ?>
-	
-	<div id="primary" class="content-area">
-	
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="site-content columns medium-7" role="main">
 
 		<?php
 			if ( have_posts() ) :
@@ -37,14 +35,14 @@ get_header(); ?>
 				// If no content, include the "No posts found" template.
 				get_template_part( 'content', 'none' );
 
-			endif;
-		?>
+			endif; ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		</div>
 	
 	<?php get_sidebar(); ?>
 		
+	</div>
+	
 </div>
 
 <?php get_footer(); ?>

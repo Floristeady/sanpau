@@ -11,12 +11,13 @@ get_header(); ?>
 
 	<?php include('inc/breadcrumbs.php'); ?>
 	
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area row">
+	
+		<div id="content" class="site-content columns medium-7" role="main">
 
 		
 
-<?php
+			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 
@@ -37,9 +38,10 @@ get_header(); ?>
 				endwhile;
 			?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		</div>
+		
+		<?php get_sidebar(); ?>
+		
+	</div>
 
 <?php get_footer(); ?>

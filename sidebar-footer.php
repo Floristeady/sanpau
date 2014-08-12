@@ -22,13 +22,13 @@
 ?>
 
 <?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
-					<div class="widget-list widget-footer columns medium-5">
+					<div class="widget-list widget-footer columns medium-6">
 						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
 					</div>
 <?php endif; ?>
 
 <?php if ( is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
-					<div class="widget-list widget-footer widget-last columns medium-5">
+					<div class="widget-list widget-footer widget-last columns medium-4">
 						<?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
 					</div>
 <?php endif; ?>

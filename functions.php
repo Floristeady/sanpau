@@ -229,18 +229,7 @@ function sanpau_widgets_init() {
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );
-
-	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
-	register_sidebar( array(
-		'name' => __( 'Secondary Sidebar', 'sanpau' ),
-		'id' => 'secondary-widget-area',
-		'description' => __( 'Secondary Sidebar Widget', 'sanpau' ),
-		'before_widget' => '<aside id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-
+	
 	// Area 3, located in the footer. Empty by default.
 	register_sidebar( array(
 		'name' => __( 'Footer Widget Area', 'sanpau' ),
