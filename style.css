@@ -1214,6 +1214,11 @@ nav#access ul.sub-menu li a:hover {
 	font-weight: bold;
 }
 
+#box-contact .close-reveal-modal {
+	color: #500305;
+	font-size: 1.8rem;
+}
+
 /*
  * entry-content
  */

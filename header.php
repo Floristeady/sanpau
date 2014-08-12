@@ -76,6 +76,6 @@
 
 			<div id="main" role="main">
 			 	<div id="main-inner">	
-				 	<div id="box-contact" class="reveal-modal medium" data-reveal>
-					</div>
-			
+
+				 	<?php include('inc/modal-page.php'); ?>
+				 			

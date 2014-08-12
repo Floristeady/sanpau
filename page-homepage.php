@@ -66,7 +66,7 @@ get_header(); ?>
 			
 			<div id="home-contact">
 				<div class="row open-modal">
-					<a href="/?page_id=13" data-reveal-id="box-contact" class="right" data-reveal><span></span>Contáctanos</a>
+					<a href="#" data-reveal-id="box-contact" class="right" data-reveal><span></span>Contáctanos</a>
 				</div>
 			</div>
 		</div>
