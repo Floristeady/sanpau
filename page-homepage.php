@@ -17,7 +17,7 @@ get_header(); ?>
 				
 				<?php  $rows = get_field('listado_palabra');  ?>
 				<?php if($rows) { ?>
-				<div id="featured-module" class="column medium-offset-10 medium-2 right">
+				<div id="featured-module" class="column small-6 medium-offset-10 medium-2 right">
 					<?php foreach($rows as $row) { ?>
 					<h2><?php echo $row['palabra_o_frase'] ?></h2>
 					<?php } ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 				<?php foreach($rows as $row) { ?>
 				<li>
 					<div class="row text">
-						<div class="text-inner column medium-7">
+						<div class="text-inner column small-9 medium-7">
 							<h1><?php echo $row['texto_principal'] ?></h1>
 						</div>
 					</div>
@@ -51,7 +51,7 @@ get_header(); ?>
 							}
 						?>
 					 	<?php } else { ?>
-					 	<img src="<?php echo bloginfo('template_url'); ?>/images/test/defaultSlider.jpg" alt="San Pau Consultores" />
+					 	<img src="<?php echo bloginfo('template_url'); ?>/images/default/defaultSlider.jpg" alt="San Pau Consultores" />
 					 <?php } ?>
 					</div>
 			    </li>
@@ -64,7 +64,7 @@ get_header(); ?>
 				<div class="isotipo"></div>
 			</div>
 			
-			<div id="home-contact">
+			<div id="home-contact" class="show-for-medium-up">
 				<div class="row open-modal">
 					<a href="#" data-reveal-id="box-contact" class="right" data-reveal><span></span>Contáctanos</a>
 				</div>

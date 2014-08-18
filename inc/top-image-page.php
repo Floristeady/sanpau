@@ -14,5 +14,5 @@
 		}
 	?> 
 <?php } else { ?>
-	<img src="<?php echo bloginfo('template_url'); ?>/images/test/top01.jpg" alt="<?php the_title(); ?>" />
+	<img src="<?php echo bloginfo('template_url'); ?>/images/default/defaultTop.jpg" alt="<?php the_title(); ?>" />
 <?php } ?>
