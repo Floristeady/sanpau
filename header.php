@@ -9,11 +9,7 @@
  * @since sanpau 1.0
  */
 ?><!DOCTYPE html>
-<!--[if lt IE 7 ]><html <?php language_attributes(); ?> class="no-js ie ie6"><![endif]-->
-<!--[if IE 7 ]><html <?php language_attributes(); ?> class="no-js ie ie7"><![endif]-->
-<!--[if IE 8 ]><html <?php language_attributes(); ?> class="no-js ie ie8"><![endif]-->
-<!--[if IE 9 ]><html <?php language_attributes(); ?> class="no-js ie ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> ><!--<![endif]-->
+  <html <?php language_attributes(); ?> >
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,8 +39,9 @@
 		wp_head();
 ?>
 	</head>
+
 	<body <?php body_class(); ?>>
-	
+
 		<div class="clearfix" id="page">
 				
 			<header id="masthead" role="banner">
@@ -57,7 +54,8 @@
 						<div id="site-title">
 						
 						<?php if( $sanpau_settings['custom_logo'] ) : ?>
-							<h1><a href="<?php echo bloginfo('url'); ?>" class="logo"><img src="<?php echo $sanpau_settings['custom_logo']; ?>" alt="<?php bloginfo('name'); ?>" /> </a></h1>
+							<h1><a href="<?php echo bloginfo('url'); ?>" class="logo">
+							<img src="<?php echo $sanpau_settings['custom_logo']; ?>" alt="<?php bloginfo('name'); ?>" /> </a></h1>
 						<?php  else : ?>
 							<h1><a href="<?php echo bloginfo('url'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php endif; ?>

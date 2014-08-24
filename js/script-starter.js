@@ -2,6 +2,11 @@
 Any site-specific scripts you might have.
 */
 
+//Si no soporta archivos en formato SVG
+if (!Modernizr.svg) {
+  $("a.logo img").attr("src", "wp-content/themes/sanpau/images/default/logotipo_sanpau.png");
+  $('img[src$=".svg"]').hide();
+}
 
 if (window.jQuery) {  
 	$('#home-slider .slides li').css('display','none');
@@ -13,17 +18,10 @@ jQuery(function ($) {
 	/************************* 
 	Variables
 	**************************/
-
-
 	var browserwidth;
 	var desktopwidth = 1024; // resolución mínima desktop
 	var mobilewidth = 767; // resolución máxima móviles 
 
-	//Si no soporta archivos en formato SVG
-	if (!Modernizr.svg) {
-	  $("a.logo img").attr("src", "wp-content/themes/sanpau/images/default/logotipo_sanpau.png");
-	  $('img[src$=".svg"]').hide();
-	}
 
 	/************************* 
 	Ejecución
