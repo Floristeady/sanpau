@@ -37,9 +37,6 @@
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>
 			
-				   <?php if ( 'post' == get_post_type() ) : ?>
-					<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'sanpau' ), __( '1 Comment', 'sanpau' ), __( '% Comments', 'sanpau' ) ); ?></span>
-					<?php endif; ?>
 			<?php
 		    endif;
 

@@ -583,4 +583,13 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 	return $existing_mimes;
 }
 
+// admin options
+function edit_admin_menus() {
+	global $menu;
+
+	remove_menu_page('edit-comments.php'); // Remove the Tools Menu
+}
+
+add_action( 'admin_menu', 'edit_admin_menus' );
+
 ?>
