@@ -13,10 +13,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
@@ -2091,40 +2087,6 @@ div.wpcf7-mail-sent-ok {
 
 /* 12. Hacks & Helpers
 ========================================================================== */
-
-/*
-html>body nav#access {
-		clear: right;
-		display: block;
-		float: right;
-		padding: 2.5em 0em 2%;
-		vertical-align: middle;
-		width: 73%;	
-}
-
-html>body nav#access div > ul > li {
-		display: inline-block;
-		float: left;
-		padding: 0 2em 6px .7em;
-		position: relative;
-		background: none;
-		border: none;
-		width: auto;
-		font-size: .8em;
-} 
-
-html>body nav#access .menu {
-	float: right;
-}
-
-html>body #site-title {
-	float: left;
-	padding: .3em 1.5% 0.3em;
-	display: block;
-	margin-bottom: 0px;
-	width: 25%;
-}
-*/
 
 /*
  * Image replacement
