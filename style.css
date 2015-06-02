@@ -345,8 +345,7 @@ img.aligncenter,
 
 #main {
     clear: both;
-    margin: 0px 0 0;
-    overflow:auto;
+    margin: 0px 0 0;    
 	padding-bottom: 90px;
 }
 
@@ -920,9 +919,10 @@ nav#access ul.sub-menu li a:hover {
 	top: 7em;
 	left: 0;
 	right: 0;
-	width: 342px;
 	height: 300px;
 	margin: 0 auto;
+    background-size: 80%;
+	width: auto;
 }
 
 #home-contact {
@@ -1994,6 +1994,8 @@ div.wpcf7-mail-sent-ok {
 		width: inherit;
 		padding:0;
 	}
+	
+	.isotipo {background-size: 50%; }
 }
 
 /* medium displays 960px */
@@ -2005,6 +2007,11 @@ div.wpcf7-mail-sent-ok {
 		margin-bottom: 0px;
 		width: 25%;
 	}
+	
+	
+	
+	#main {overflow:auto;}
+	.isotipo { width: 342px; background-size: 80%; }
 	
 	nav#access {
 		clear: right;
